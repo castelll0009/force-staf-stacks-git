@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset= "utf-8">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/stacks.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">    
+   		<link rel="stylesheet" href="css/estilosstacks.css">
+    	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>Galeria marketing y  publicidad</title>			
+	</head>
+	<body> 	
+
+		<main>
+			<div class="contenedor-todo">
+
+				<nav  class="fondo-azuloscuro padding-largo text-center" style="">
+				<ul class="no-lista">				
+					<li class="col-md-2 inline-block fuente-opensans"><a href="index.html"><img src="imgs/home-icon2.png" id="home-fs"></a></li>				
+					<li class="col-md-2 inline-block"><a href="index.html" class="color-gris fuente-tam-pequeno">APLICACIONES WEB</a></li>
+					<li class="col-md-2 inline-block"><a href="marketing_publicidad.html" class="color-gris fuente-tam-pequeno">MARKETING Y PUBLICIDAD</a></li>
+					<li class="col-md-2 inline-block"><a href="streaming.html" class="color-gris fuente-tam-pequeno">CUENTAS STREAMING</a></li>
+					<li class="col-md-2 inline-block"><a href="forcestacks.html" class="color-gris fuente-tam-pequeno">FORCE STACKS</a></li>
+					<li class="col-md-2 inline-block"><a href="index.html" class=" fuente-tam-pequeno">INICIAR SESION</a></li>
+				</ul>
+				</nav>				
+			
+				<video autoplay loop muted id="myVideo">
+					<source src="dota.mp4" type="video/mp4">
+					<!--source src="god.mp4" type="video/mp4"-->
+					Your browser does not support HTML5 video.
+				</video>
+
+				<!--Contenedor de todos los pasos para hacer el stack-->
+			    <div class="container-steps" style="">	       
+			     	      
+			    	<!--1er PASO Elegir el servicio-->
+				        <div type="button" value="Pinchame y verás" onclick="funtionStep1()" id="step1" class="gallery container-gallery" style=" display: flex;">			
+				        	<h1>1. Escoje el servicio que deseas adqurir</h1>   	
+							<figure style=""><h1>Youtube Premium</h1>
+								<img src="forcestacks/youtube.png">
+							</figure>  
+							<figure><h1>Netflix Premium</h1>
+								<img src="forcestacks/netflix.png">
+							</figure>   
+
+				            <figure><h1>Disney Plus Premium</h1>
+				            	<img src="forcestacks/disney.png">
+				            </figure>
+				            
+							<figure><h1>Spotify Premium</h1>
+				            	<img src="forcestacks/spotify2.png">
+				            </figure>   
+
+				            <figure><h1>Crunchyroll Premium</h1>
+				            	<img src="forcestacks/crunch.png">
+				            </figure>     
+							       
+				            <figure><h1>Prime video Premium</h1>
+								<img src="forcestacks/primevideo.png">
+							</figure>    
+							<!-- <input type="button" value="Mas recientes" class="btn-recient">-->    
+															
+						</div>  
+
+						<div><i class="fa fa-chevron-circle-left step1-events btn-previus" ></i> 	 
+		      		</div>	
+
+			      	<!--2do PASO-cantidad de pantallas y precio-->
+				    <div class="step2 container-gallery " data-heading="cantidad de cuentas o pantallas" id="part-price" style="display: none; transition: none 0s ease 0s; left: 9px; top: 251.5px;  ">
+				    	<input type="hidden" id="currency" value="usd">
+						<h1>2. Cantidad de cuentas ó pantallas:</h1>
+						<select id="price">
+							<option value="25">1 pantalla Netflix $ 10000</option><option value="50">2 pantallas Netflix $ 20000</option><option value="100" selected="">3 pantallas Netflix $ 30000</option><option value="250">4 pantallas Netflix $ 40000</option>
+						</select><div type="button" class="button action-next"><i class="fa fa-dollar"></i>Establecer precio</div>
+					</div>		
+
+						<!--3er PASO -->
+			    	<div class="part container-gallery" data-heading="hasta cuando" id="part-deadline" style="display: none; transition: none 0s ease 0s; left: 9px; top: 220px;">
+			    		<h1>3. Fecha Limite</h1>
+			    		<input type="date" id="deadline" value="">
+			    		<div type="button" class="button action-next">
+			    			<i class="fa fa-calendar-o"></i>Establecer fecha limite
+			    		</div>
+			    		<div class="alert-box success daysFromNow" style="display: none;">That's 14 days from now</div>
+			    	</div>
+
+			    	<!--4er PASO -->
+		    		<div class="part container-gallery" data-heading="Who are you" id="part-creator" style="display: none; transition: none 0s ease 0s; left: 9px; top: 247.5px;"> 
+		    		<h1>4. Ingresa tu correo eletrónico</h1>
+		    		<p>Aqui recibira las credenciales 
+					del servicio(correos,contraseñas, enlaces y instrucciones para la activacion del servicio.</p>
+		    		<input type="text" id="creatorEmail" placeholder="Your Email" value=""><div type="button" class="button action-next"><i class="fa fa-paper-plane"></i>Set your email</div><div class="alert-box">You need to enter your email</div></div>
+
+		    		<!--5to PASO -->
+					<div class="part container-gallery" data-heading="Como quieres pagar" id="part-paymetod" style="display: none; transition: none 0s ease 0s; left: 9px; top: 247.5px;"> 
+		    		<h1>5. Metodo de pago</h1>
+		    		<p>Elije como quieres pagar el servicio.</p>
+		    		<div type="button" class="button action-next"><i class="fa fa-cart-arrow-down"></i>Elegir metodo de pago</div><div class="alert-box">necesitas elegir algun metodo de pago</div></div>
+
+
+			    </div>
+			   	<!--final del contenedor de los pasos-->
+			    		    			    		   
+
+		    	<!-- Informacion -->
+
+				<div class="content" align="center" style="">					
+				    <h1>Información</h1>
+				    <p>No caigas en el aburrimiento, tenemos todo tipo de cuentas de streaming, puedes checar un poco de su contenido antes de realizar una compra, las cuentas son originales la calidad es Ultra UH 4K, ¿Que esperas?.</p>
+				    <button id="myBtn" onclick="myFunction()">Pause</button>
+				</div>	
+
+				<nav  class="fondo-azuloscuro padding-corto text-center espacio-arriba-diminuto">
+					<ul class="no-lista">								
+						<li class="col-md-2 inline-block"><a href="index.html" class="color-gris fuente-tam-pequeno">Menú</a></li>
+						<li class="col-md-2 inline-block"><a href="contacto.html" class="color-gris fuente-tam-pequeno">Contacto</a></li>
+						<li class="col-md-2 inline-block"><a href="acercade.html" class="color-gris fuente-tam-pequeno">Acerca de</a></li>							
+						<li class="col-md-2 inline-block fuente-opensans"><a href="index.html"><img src="imgs/marca-blanca-fs.png" class="img-tam-marca	"></a></li>				
+					</ul>
+				</nav>	
+			
+
+				<script src="js/forcestacks.js"></script>			   
+				<script src="js/streaming.js"></script>		    
+			</div>
+		</main>	
+		
+	</body>
+</html>
