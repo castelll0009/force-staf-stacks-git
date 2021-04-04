@@ -1,7 +1,6 @@
 body{	  	
   	font-family: Arial;
   	font-size: 17px;
-
     background: #131313;
     background-image: initial;
     background-position-x: initial;
@@ -22,7 +21,6 @@ body{
     user-select: none;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-
 }
 img{	
 	max-width: 100%;
