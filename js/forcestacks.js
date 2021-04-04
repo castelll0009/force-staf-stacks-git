@@ -1,8 +1,3 @@
-$('.step1-events').on('click', functionStep1(){        
-	const demoId = document.querySelector('step1');
-	demoId.display=	 'none';
-})
-
 $('.btn-show').on('click', function(){
 
     $('form').animate({
