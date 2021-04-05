@@ -101,14 +101,15 @@ header{
 
 /*Submenu*/
 
-.submenu-ul{            
+.submenu-ul{   
+    z-index: 1;         
     width: 300px;
     position: absolute;    
     left: 0;
     flex-direction: column;
     border: 1px solid #eeeeee;
     background: white;
-    border-bottom: 1px solid #55A79A;
+    border-bottom: 1px solid #e7e5e5;
     padding: 10px;
 }
 .submenu-ul :hover{               
@@ -120,24 +121,43 @@ header{
 }
 
 /*
-.menu ul li ul li{
+.menu ul li ul ,li{
     padding: 10px 20px;
     border-bottom: 1px solid #eeeeee;
     font-weight: 100;
     font-size: 14px;
     position: relative;
 }
-
-.menu ul li ul li:hover{
-    background: #FAFAFA;
+*/
+.submenu-ul-li{
+    padding: 10px 20px;
+    border-bottom: 1px solid #eeeeee;
+    font-weight: 100;
+    font-size: 14px;
+    position: relative;
+}
+.submenu-ul-li-span{
+    position: static;    
 }
 
+.menu ul li ul ,li:hover{
+    background: #FAFAFA;    
+}
+
+/*
 .menu ul li ul li ul{
     position: absolute;
     left: 287px;
     top: 0;
+}*/
+.submenu-web-ul-li-ul{
+    position: absolute;
+    left: 287px;    
+    top: 0px;
+
 }
 
+/*
 .icon-menu{
     display: none;
 }
@@ -210,7 +230,8 @@ article p{
     background-size: cover;
     margin: 10px;
 }
-
+*/
+/*
 @media screen and (max-width: 1000px){
     
     header{
@@ -268,7 +289,7 @@ article p{
         padding: 10px 20px;
     }
     
-    .menu ul li ul{
+    .menu ul li ,ul{
         top: 0;
         border-bottom: 1px solid transparent;
         background: #2D2F30;
