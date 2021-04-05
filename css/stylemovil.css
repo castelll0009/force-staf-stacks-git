@@ -23,6 +23,7 @@ header{
     justify-content: space-between;
     position: relative;
     margin: auto;
+    /*margin-right: 0px;*/
 }
 
 .container-logo-title{
@@ -43,7 +44,7 @@ header{
 }
 
 .container-menu{
-    
+/*    display: flex;*/
 }
 
 .menu{
@@ -52,26 +53,11 @@ header{
     margin-top: 20px;    
 }
 
-.menu ul{     
-    display: flex;
-}
-#menu-nav-ul{
+.menu ,ul{     
     display: flex;
 }
 
-.menu ul li{
-    list-style: none;
-    font-size: 12px;
-    font-weight: bold;
-    color: #868686;
-    padding: 20px 10px;
-    border: 1px solid transparent;
-    border-top: 4px solid transparent;
-    cursor: pointer;
-    transition: border 300ms;
-    position: relative;
-}
-.menu-nav-ul,li{
+.menu ul ,li{
     list-style: none;
     font-size: 12px;
     font-weight: bold;
@@ -85,44 +71,39 @@ header{
 }
 
 .menu ul li label,
-.menu ul li span{
+.menu ul li Span{
     color: #868686;
 }
 
-/*
-.menu > ul > li:hover{
-    border: 1px solid #eeeeee;
-    border-top: 4px solid #55A79A;
+.menu ul  ,li:hover{
+    border: 1px solid #eeeeee;    
+    border-top: 4px solid #55A79A;    
+    
 }
 
-.menu ul li label,
-.menu ul li span{
-    color: #868686;
-}
-
-.menu ul li span{
+.menu ul li ,span{
     font-size: 14px;
     position: relative;
     top: 4px;
 }
 
-.menu ul li label{
-    font-size: 22px;
+.menu ul li ,label{
+    font-size: 25px;
     position: relative;
     top: -6px;
 }
 
-.menu ul li .icon2{
+.menu ul ,li .icon2{
     position: relative;
-    top: -2px;
+    top:-2px;
 }
 
+
 /*Submenu*/
-/*
-.menu ul li ul{
+
+.submenu-ul{            
     width: 300px;
-    position: absolute;
-    top: 60px;
+    position: absolute;    
     left: 0;
     flex-direction: column;
     border: 1px solid #eeeeee;
@@ -130,7 +111,15 @@ header{
     border-bottom: 1px solid #55A79A;
     padding: 10px;
 }
+.submenu-ul :hover{               
+    border-bottom: 1px solid #eeeeee;    
+    border-top: 1px solid #eeeeee;    
+    /*border-left: none;
+    border-right: none;*/
+    
+}
 
+/*
 .menu ul li ul li{
     padding: 10px 20px;
     border-bottom: 1px solid #eeeeee;
