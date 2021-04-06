@@ -102,7 +102,7 @@ header{
 /*Submenu*/
 
 .submenu-ul{   
-    z-index: 1;         
+    /*z-index: 1;         */
     width: 300px;
     position: absolute;    
     left: 0;
@@ -231,6 +231,67 @@ article p{
     margin: 10px;
 }
 */
+
+@media screen and (max-width: 1000px){
+
+.container-menu{    
+    background-color: #2D2F30;     
+}
+.menu{    
+    width: auto;
+    height: 100vh;        
+    position: fixed;
+    top: 0px;
+    background-color: #2D2F30;     
+    margin-top: 0px;
+}
+    /*
+    .menu ,ul{
+        flex-direction: column;
+    }*/
+
+.menu-ul{        
+    flex-direction: column;
+}
+
+/*
+.menu ul li ,ul{
+    position:relative;
+}
+*/
+.submenu-ul{
+    width: 100%;
+    position: relative;
+    background-color: #2D2F30; 
+    border: none;  
+    padding: 2px; 
+    
+}
+.submenu-ul-li{
+    border-bottom:  1px solid #52525252;
+        
+}
+.submenu-ul :hover{
+    border: 1px solid transparent;
+    border-top: 4px, solid transparent;       
+}
+.menu ul li ul ,li:hover{
+    background-color: #363636;
+}
+/*
+.menu ul li ul li ul{
+    position: relative;
+}*/
+.submenu-web-ul-li-ul{  
+    width: 100%;
+    border-bottom: 1px, solid #414141;        
+    position: relative;      
+    border: none;    
+    left: 0px; 
+
+}
+
+}
 /*
 @media screen and (max-width: 1000px){
     
