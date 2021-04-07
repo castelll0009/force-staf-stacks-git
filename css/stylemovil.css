@@ -10,7 +10,7 @@
 header{
     width: 100%;
     height: 110px;
-    border-bottom: 1px solid #55A79A;
+    border-bottom: 1px solid #457cf2;;
     position: fixed;
     z-index: 100;
     background: white;
@@ -77,7 +77,8 @@ header{
 
 .menu ul  ,li:hover{
     border: 1px solid #eeeeee;    
-    border-top: 4px solid #55A79A;    
+    /*color azul menu*/
+    border-top: 4px solid #457cf2;    
     
 }
 
@@ -130,14 +131,15 @@ header{
 }
 */
 .submenu-ul-li{
+    
     padding: 10px 20px;
     border-bottom: 1px solid #eeeeee;
     font-weight: 100;
     font-size: 14px;
     position: relative;
 }
-.submenu-ul-li-span{
-    position: static;    
+.submenu-ul-li-span {
+    position: static;            
 }
 
 .menu ul li ul ,li:hover{
@@ -150,7 +152,7 @@ header{
     left: 287px;
     top: 0;
 }*/
-.submenu-web-ul-li-ul{
+.submenu-web-ul-li-ul{    
     position: absolute;
     left: 287px;    
     top: 0px;
@@ -259,7 +261,7 @@ article p{
     position:relative;
 }
 */
-.submenu-ul{
+.submenu-ul{    
     width: 100%;
     position: relative;
     background-color: #2D2F30; 
@@ -283,12 +285,15 @@ article p{
     position: relative;
 }*/
 .submenu-web-ul-li-ul{  
-    width: 100%;
+    width: 100%;        
     border-bottom: 1px, solid #414141;        
     position: relative;      
     border: none;    
     left: 0px; 
 
+}
+.submenu-web-ul-li-ul li{  
+    font-size: 0.94em;        
 }
 
 }
