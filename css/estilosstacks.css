@@ -198,7 +198,7 @@ figure h1{
   /*barra nav inferior*/
 .nav-inferior{                       
     margin-top: 20px;    
-    padding: 4px 2px;
+    padding: 1px 1px;
 }
 .nav-inferior ul ,li{   
     margin: auto;        
@@ -206,7 +206,7 @@ figure h1{
     align-items: center;    	    
 }
 .img-tam-marca{   	 
-    width: 100%;    
+    width: 80%;    
     position: relative;    
     /*border: 3px solid green;*/
     padding: 1px;
@@ -217,7 +217,6 @@ figure h1{
     
     .container-gallery{
         margin-top: 0px;            
-
     }   
     
     .container-steps div ,h1{                             
