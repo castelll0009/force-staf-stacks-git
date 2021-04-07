@@ -22,7 +22,7 @@
 			<div class="contenedor-todo">
 				<nav  class="nav-barra-superior fondo-azuloscuro padding-largo" >
 				<ul class="no-lista">				
-					<li class="col-md-2 inline-block fuente-opensans"><a href="index.html"><img src="imgs/home-icon2.png" id="home-fs"></a></li>				
+					<li class="col-md-2 inline-block fuente-opensans"><a href="index.html"><img src="imgs/home-icon2.png" alt="" id="home-fs"></a></li>				
 					<li class="col-md-2 inline-block"><a href="index.html" class="color-gris fuente-tam-pequeno">APLICACIONES WEB</a></li>
 					<li class="col-md-2 inline-block"><a href="marketing_publicidad.html" class="color-gris fuente-tam-pequeno">MARKETING Y PUBLICIDAD</a></li>
 					<li class="col-md-2 inline-block"><a href="streaming.html" class="color-gris fuente-tam-pequeno">CUENTAS STREAMING</a></li>
@@ -38,33 +38,33 @@
 				</video>
 
 				<!--Contenedor de todos los pasos para hacer el stack-->
-			    <div class="container-steps" style="">	       
+			    <div class="container-steps" >	       
 			     	      
 			    	<!--1er PASO Elegir el servicio-->
 				        <div id="step1" class=" container-gallery" >							        	
 							<h1>1. Escoje el servicio que deseas adqurir</h1>   	
 							<div class="gallery">
-								<figure style=""><h1>Youtube Premium</h1>
-									<img src="forcestacks/youtube.png">
+								<figure><h1>Youtube Premium</h1>
+									<img alt="" src="forcestacks/youtube.png">
 								</figure>  
 								<figure><h1>Netflix Premium</h1>
-									<img src="forcestacks/netflix.png">
+									<img alt="" src="forcestacks/netflix.png">
 								</figure>   
 	
 								<figure><h1>Disney Plus Premium</h1>
-									<img src="forcestacks/disney.png">
+									<img alt="" src="forcestacks/disney.png">
 								</figure>
 								
 								<figure><h1>Spotify Premium</h1>
-									<img src="forcestacks/spotify2.png">
+									<img alt="" src="forcestacks/spotify2.png">
 								</figure>   
 	
 								<figure><h1>Crunchyroll Premium</h1>
-									<img src="forcestacks/crunch.png">
+									<img alt="" src="forcestacks/crunch.png">
 								</figure>     
 									   
 								<figure><h1>Prime video Premium</h1>
-									<img src="forcestacks/primevideo.png">
+									<img alt="" src="forcestacks/primevideo.png">
 								</figure>    								
 							</div>																																				
 						</div>  
@@ -78,14 +78,14 @@
 						<h1>2. Cantidad de cuentas ó pantallas:</h1>
 						<select id="price">
 							<option value="25">1 pantalla Netflix $ 10000</option><option value="50">2 pantallas Netflix $ 20000</option><option value="100" selected="">3 pantallas Netflix $ 30000</option><option value="250">4 pantallas Netflix $ 40000</option>
-						</select><div type="button" class="button action-next"><i class="fa fa-dollar"></i>Establecer precio</div>
+						</select><div  class="button action-next"><i class="fa fa-dollar"></i>Establecer precio</div>
 					</div>		
 
 						<!--3er PASO -->
 			    	<div class="part container-gallery" data-heading="hasta cuando" id="part-deadline" style="display: none; transition: none 0s ease 0s; left: 9px; top: 220px;">
 			    		<h1>3. Fecha Limite</h1>
 			    		<input type="date" id="deadline" value="">
-			    		<div type="button" class="button action-next">
+			    		<div  class="button action-next">
 			    			<i class="fa fa-calendar-o"></i>Establecer fecha limite
 			    		</div>
 			    		<div class="alert-box success daysFromNow" style="display: none;">That's 14 days from now</div>
@@ -96,13 +96,13 @@
 		    		<h1>4. Ingresa tu correo eletrónico</h1>
 		    		<p>Aqui recibira las credenciales 
 					del servicio(correos,contraseñas, enlaces y instrucciones para la activacion del servicio.</p>
-		    		<input type="text" id="creatorEmail" placeholder="Your Email" value=""><div type="button" class="button action-next"><i class="fa fa-paper-plane"></i>Set your email</div><div class="alert-box">You need to enter your email</div></div>
+		    		<input type="text" id="creatorEmail" placeholder="Your Email" value=""><div  class="button action-next"><i class="fa fa-paper-plane"></i>Set your email</div><div class="alert-box">You need to enter your email</div></div>
 
 		    		<!--5to PASO -->
 					<div class="part container-gallery" data-heading="Como quieres pagar" id="part-paymetod" style="display: none; transition: none 0s ease 0s; left: 9px; top: 247.5px;"> 
 		    		<h1>5. Metodo de pago</h1>
 		    		<p>Elije como quieres pagar el servicio.</p>
-		    		<div type="button" class="button action-next"><i class="fa fa-cart-arrow-down"></i>Elegir metodo de pago</div><div class="alert-box">necesitas elegir algun metodo de pago</div></div>
+		    		<div  class="button action-next"><i class="fa fa-cart-arrow-down"></i>Elegir metodo de pago</div><div class="alert-box">necesitas elegir algun metodo de pago</div></div>
 
 
 			    </div>
@@ -111,7 +111,7 @@
 
 		    	<!-- Informacion -->
 
-				<div class="content-informacion" align="center" style="">					
+				<div class="content-informacion">					
 				    <h1>Información</h1>
 				    <p>No caigas en el aburrimiento, tenemos todo tipo de cuentas de streaming, puedes checar un poco de su contenido antes de realizar una compra, las cuentas son originales la calidad es Ultra UH 4K, ¿Que esperas?.</p>
 				    <button id="myBtn" onclick="myFunction()">Pause</button>
@@ -122,11 +122,10 @@
 						<li class="col-md-2 inline-block"><a href="index.html" class="color-gris fuente-tam-pequeno">Menú</a></li>
 						<li class="col-md-2 inline-block"><a href="contacto.html" class="color-gris fuente-tam-pequeno">Contacto</a></li>
 						<li class="col-md-2 inline-block"><a href="acercade.html" class="color-gris fuente-tam-pequeno">Acerca de</a></li>							
-						<li class="col-md-2 inline-block fuente-opensans"><a href="index.html"><img src="imgs/marca-blanca-fs.png" class="img-tam-marca	"></a></li>				
+						<li class="col-md-2 inline-block fuente-opensans"><a href="index.html"><img alt="" src="imgs/marca-blanca-fs.png" class="img-tam-marca	"></a></li>				
 					</ul>
 				</nav>	
 			
-
 				<script src="js/forcestacks.js"></script>			   
 				<script src="js/streaming.js"></script>		    
 			</div>
