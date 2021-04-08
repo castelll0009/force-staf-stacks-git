@@ -86,23 +86,17 @@ header{
     font-size: 14px;
     position: relative;
     top: 4px;
+    padding-bottom: 12px;
 }
 
-.menu ul li ,label{
-    font-size: 25px;
-    position: relative;
-    top: -6px;
+.menu ul li ,label{        
+    font-size: 25px;        
+    margin-top: -50px;         
 }
-
-.menu ul ,li .icon2{
-    position: relative;
-    top:-2px;
-}
-
 
 /*Submenu*/
 
-.submenu-ul{   
+.submenu-ul{       
     /*z-index: 1;         */
     width: 300px;
     position: absolute;    
@@ -130,13 +124,12 @@ header{
     position: relative;
 }
 */
-.submenu-ul-li{
-    
+.submenu-ul-li{    
     padding: 10px 20px;
     border-bottom: 1px solid #eeeeee;
     font-weight: 100;
     font-size: 14px;
-    position: relative;
+    position: relative;    
 }
 .submenu-ul-li-span {
     position: static;            
