@@ -1,61 +1,14 @@
-$('.btn-show').on('click', function(){
+var step1 = document.getElementById("step1");
+var step2 =  document.getElementById("step2");
+var step3 =  document.getElementById("step3");
+var step4 =  document.getElementById("step4");
+var step5 =  document.getElementById("step5");
 
-    $('form').animate({
-        top: '0px'
-    });
+function handleClick(element){
+/*    element.style="display:none;"**/    
+    step1.style ="display: none";
+    step2.style ="display: block";
 
-    $('i').css({    	
-        display: 'none'
-    });
-    
-    $('.shape').fadeIn();      
-    
-})
-
-$('.shape').on('click', function(){
-    
-     $('form').animate({
-        top: '-545px'
-    });
-    
-    $('.shape').fadeOut();
-    
-    $('body').css({
-        overflowY: 'scroll'
-    })
-    
-})
-
-$('.load-image').on('click', function(){
-    
-    $('.seleted').click();
-    
-})
-
-
-/*VISOR DE FOTOS*/
-
-$(function() {
-  $('.seleted').change(function(e) {
-      addImage(e); 
-     });
-
-     function addImage(e){
-      var file = e.target.files[0],
-      imageType = /image.*/;
-    
-      if (!file.type.match(imageType))
-       return;
-  
-      var reader = new FileReader();
-      reader.onload = fileOnload;
-      reader.readAsDataURL(file);
-     }
-  
-     function fileOnload(e) {
-      var result=e.target.result;
-      $('.image-select').attr("src",result);
-     }
-});
+}
 
 

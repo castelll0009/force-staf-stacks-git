@@ -34,77 +34,67 @@
 }
 
 body{
-    /*
-    background: linear-gradient(
-      25deg,
-      rgba(66, 230, 149, 1),
-      rgba(66, 32, 149, 1)
-    );    
-    */
-    /*background-image: url(http://localhost/5ge/marketing_publicidad/fondo.png);*/
-    background-image: url( https://fondosmil.com/fondo/504.jpg);
-    background-position: center;     
-    background-repeat: no-repeat;
-    background-size: 200%;        
+       
 }
-main{    
-    padding-bottom: 10px;
+main{            
     padding-right: 10px;
     padding-left: 10px;
-    background: none;        
+    background: none;      
 }
 .contenerdor-todo{      
-    position: relative;        
+    position: relative;           
+    display: flex;
 }
 .contenerdor-todo ,nav{
     background-color: #031326;	    	
     padding: 6px 4px;	
-    font-size: 0.7em;    
+    font-size: 0.7em;   
+    box-shadow: 0px 0px 40px -5px;             
     
 }
 .contenerdor-todo nav ,ul{
     margin: auto;
-    text-align: center;    
+    text-align: center;        
 }
 
 .container-steps{ 
-    margin: auto;  
-    max-width: 1000px;
+    margin: auto;      
+    max-width: fit-content;        
     width: 100%;    
     background-color: rgba(255, 255, 255, .8);
     border-radius: 14px;
-    padding-bottom: 8px;
-    margin-top: 50px;  
+    padding-bottom: 0px;    
+    margin-top: 50px;     
 }
-.container-gallery{       
-    max-width: 1000px;
-    width: 100%;
+.container-gallery{      
+    max-width: 1100px;
+    position: relative;
+    font-size: 1em;    
+    width: 100%;     
     background-color: rgba(255, 255, 255, .9);
     padding: 20px;
     margin: auto; 
     text-align: center;   
     border-radius: 14px;
-    box-shadow: 0px 0px 40px -5px;        
-
+    box-shadow: 0px 0px 40px -5px;            
 }
 
-.gallery{           
+.gallery{               
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;    
+    flex-wrap: wrap ;        
 }
 
 .container-steps div ,h1{         
-    margin: auto;        
-    margin-bottom: 30px; 
-    font-size: 1.5em;
+    margin: auto;            
+    font-size: 1.2em;
 }
 
 figure{       
-    width: 300px;
-    height: 192px;
+    width: 180px;
+    height: 113px;
     position: relative;    
-    margin: 10px;
+    margin: 2px;
     overflow: hidden;
 
 }
@@ -139,28 +129,91 @@ figure h1{
     cursor: default;
 }
 
-.btn-previus{   
-    margin-top: 40px;
-    padding: 14px 40px;
-    display: block;
-    z-index: 40;
-    width: 60px;
-    height: 60px;    
-    margin: auto;  
-    border-radius: 50%;
-    font-size: 40px;
-    padding: 10px;
-    background: white; 
+.container-gallery{     
+    max-width: 1000px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .9);
+    padding: 20px;    
+    text-align: center;   
+    border-radius: 14px;
+    box-shadow: 0px 0px 40px -5px;              
+}
+
+.button-next{                
+    width: 400px;
+    background-color:  #0093C6;    
+    /*
+    background-color: rgba(56, 136, 255, 0.9);*/
+    box-shadow: inset 0 -0.5em rgb(0 0 0 / 35%);
+    text-shadow: 0 -0.05em 0 rgb(0 0 0 / 10%);        
+    cursor: pointer;
+    padding: 20px;
+    padding-bottom: 30px ;
+    margin: auto; 
+    text-align: center;   
+    border-radius: 2px;         
     color: white;
-    color: #575757;    
-    box-shadow: 0px 0px 40px -5px;        
+}
+.button-next:hover{
+    box-shadow: inset 0 -0.5em rgb(0 0 0 / 45%);
+}
+
+.alert-box {     
+    width: 400px;  
+    display: block;
+    clear: both;
+    border-radius: 2px; 
+    /*background: #ff4742;*/
+    background: #031326;    
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    display: none;
+    font-weight: 500;
+}
+.div-button-previus-pc{            
+   
+}
+.button-previus-pc{  
+    margin-top: 150px;    
+    z-index: 40;       
+    font-size: 40px;            
+    color: white;        
+    float: left;
     transition: all 600ms cubic-bezier(1,0,0,1);
-    cursor: pointer;    
+    cursor: pointer; 
+}
+.button-previus-pc:hover{
+    transform: rotate(90deg);
+}
+
+
+.div-button-previus{        
+    display: flex;        
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.btn-previus{                         
+    z-index: 40;       
+    font-size: 40px;
+    /*padding: 10px;
+    width: 60px;
+    height: 60px;   
+    padding: 14px 40px;  
+     box-shadow: 0px 0px 40px -5px;   
+     margin-top: 40px;   
+     border-radius: 50%;
+     background: white; 
+    */        
+    color: white;
+    color: #575757;               
+    transition: all 600ms cubic-bezier(1,0,0,1);
+    cursor: pointer;            
 }
 .btn-previus:hover{
      transform: rotate(90deg);
 }
-
 /* Informacion boton play videos*/
 
 #myVideo {
@@ -216,14 +269,9 @@ figure h1{
   }  
 
 /* resolucion para android */
-@media screen and (max-width: 700px){
+@media screen and (max-width: 700px){    
     
-    .container-gallery{
-        margin-top: 0px;            
-    }   
-    
-    .container-steps div ,h1{                             
-        margin-bottom: 30px;      
+    .container-steps div ,h1{                                        
         font-size: 1.1em;        
     }   
 
