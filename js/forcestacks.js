@@ -139,7 +139,7 @@ function handleClick(element){
 
 //IMPLEMENTACION O LLAMADO DE LAS FUNCIONES //////////////////////////////////////////////////////////////
 /*pra ocultar el boton de ir hacia trans antes del step 1*/
-
+setButtons();
 
 /* diferentes comportamientos dependiento de la resolucion de lapantalla*/
 window.onresize = function(){
