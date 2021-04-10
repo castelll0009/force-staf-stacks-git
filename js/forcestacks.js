@@ -1,4 +1,4 @@
-/* DECLARACION DE FUNCIONES Y VARIABLES GLOBALES*/
+//DECLARACION DE FUNCIONES Y VARIABLES GLOBALES//////////////////////////////////////////////////////////////
 var step1 = document.getElementById("step1");
 var step2 =  document.getElementById("step2");
 var step3 =  document.getElementById("step3");
@@ -9,24 +9,42 @@ var buttonPreviusAndroid = document.getElementById("button-previus"); // boton a
 var stepcurrent = 1;
 var anchoVentana = window.innerWidth;
 
-const funcion1 = () => {
-    alert("funcion1");    
-  }
-  
-  const funcion2 = () => {
-    alert("funcion2");
-  }
-  
-  const funcion3 = () => {
-    alert("funcion3");
-  }
+function setButtons(){
+    if(anchoVentana > 700){        
+        resolutionPC(1);             
+    }else{
+        resolutionMovil(2);
+    }
+}
+function resolutionPC(){
+    showButtons(1)
+}
+function resolutionMovil(){
+    showButtons(2)
+}
+function  showButtons(params) {
+    if(stepcurrent == 1){
+        buttonPreviusAndroid.style = "display: none";   
+        buttonPreviusPC.style = "display: none";   
+    }else{
+        if(params == 1){
+            //resolucion de PC
+            buttonPreviusPC.style = "display: block";   //mostrar boton pc
+            buttonPreviusAndroid.style = "display: none" ;        //no mostrar boton movil
+        }else if (params == 2){
+            //ya estamos  en resoluciones de android, entonces debe mostrar el  boton previus en la parte inferior
+            buttonPreviusPC.style = "display: none";  
+            buttonPreviusAndroid.style = "display: block" ;
+        }
+    }
+}
 
 function gotoNextStep(Pstepcurrent){
     switch(Pstepcurrent){
         case 1:      
             step1.style ="display: none";
             step2.style ="display: block";  
-            stepcurrent = 2;   
+            stepcurrent = 2;               
         break;
         case 2:
             step2.style ="display: none";
@@ -50,6 +68,8 @@ function gotoNextStep(Pstepcurrent){
         case 6:
         break;     
     }
+    setButtons();
+    
 }
 
 function gotoStepPrevius(Pstepcurrent){
@@ -79,6 +99,7 @@ function gotoStepPrevius(Pstepcurrent){
         case 6:
         break;     
     }
+    setButtons();
 }
 
 /*ir hacia atras cuando presiono boton previus anddroid o pc*/
@@ -88,53 +109,43 @@ buttonPreviusAndroid.onclick = function(){
 buttonPreviusPC.onclick = function(){
     gotoStepPrevius(stepcurrent);    
 }
-/*pra ocultar el boton de ir hacia trans antes del step 1*/
-
-/* IMPLEMENTACION O LLAMADO DE LAS FUNCIONES*/
-buttonPreviusAndroid.style = "display: none";   
 
 function handleClick(element){
-/* significa que ya sali delpaso 1*/        
-    if(element == 'youtube'){                
-        gotoNextStep(stepcurrent);        
+    /* significa que ya sali delpaso 1*/        
+        if(element == 'youtube'){                
+            gotoNextStep(stepcurrent);        
+        }
+        if(element == 'hbomax'){
+            gotoNextStep(stepcurrent);
+        }
+        if(element == 'netflix'){
+            gotoNextStep(stepcurrent);
+        }
+        if(element == 'disney'){
+            gotoNextStep(stepcurrent);
+        }
+        if(element == 'spotify'){
+            gotoNextStep(stepcurrent);
+        }
+        if(element == 'crunchyroll'){
+            gotoNextStep(stepcurrent);
+        }
+        if(element == 'primevideo'){
+            gotoNextStep(stepcurrent);
+        }    
+        
     }
-    if(element == 'hbomax'){
-        gotoNextStep(stepcurrent);
-    }
-    if(element == 'netflix'){
-        gotoNextStep(stepcurrent);
-    }
-    if(element == 'disney'){
-        gotoNextStep(stepcurrent);
-    }
-    if(element == 'spotify'){
-        gotoNextStep(stepcurrent);
-    }
-    if(element == 'crunchyroll'){
-        gotoNextStep(stepcurrent);
-    }
-    if(element == 'primevideo'){
-        gotoNextStep(stepcurrent);
-    }    
-    
-}
+
+
+//IMPLEMENTACION O LLAMADO DE LAS FUNCIONES //////////////////////////////////////////////////////////////
+/*pra ocultar el boton de ir hacia trans antes del step 1*/
+
 
 /* diferentes comportamientos dependiento de la resolucion de lapantalla*/
-
 window.onresize = function(){
-
-    anchoVentana = window.innerWidth;
-    console.log(anchoVentana); 
-
-    if(anchoVentana > 1000){        
-        funcion1();
-      }else if(anchoVentana > 700 && anchoVentana < 1000){
-        funcion2();
-      }else{
-        funcion3();
-      }
-};
-
+    anchoVentana = window.innerWidth;    
+    setButtons();
+};    
    /*
 const heightOutput = document.querySelector('#height');
 const widthOutput = document.querySelector('#width');    
