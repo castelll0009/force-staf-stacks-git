@@ -141,6 +141,7 @@ figure h1{
 
 .button-next{                
     width: 400px;
+    width: auto;
     background-color:  #0093C6;    
     /*
     background-color: rgba(56, 136, 255, 0.9);*/
