@@ -42,39 +42,37 @@
 			    <div class="container-steps" >	       								     	      
 					<!--1er PASO Elegir el servicio-->
 					<div id="step1" class="container-gallery" >							        	
-						<h1>1. Escoje el servicio que deseas adqurir</h1>   	
+						<h1>1. Escoje el servicio que deseas adquirir</h1>   	
 						<div class="gallery">
-							<figure onclick="handleClick(this)"><h1>Youtube Premium</h1>
+							<figure onclick="handleClick('youtube')"><h1>Youtube Premium</h1>
 								<img alt src="forcestacks/youtube.png">
 							</figure>  
-							<figure><h1>HBO Max Premium</h1>
+							<figure onclick="handleClick('hbomax')"><h1>HBO Max Premium</h1>
 								<img alt="" src="forcestacks/hbomax.jpg">
 							</figure>   
-							<figure><h1>Netflix Premium</h1>
+							<figure onclick="handleClick('netflix')"><h1>Netflix Premium</h1>
 								<img alt="" src="forcestacks/netflix.png">
 							</figure>   
 
-							<figure><h1>Disney Plus Premium</h1>
+							<figure onclick="handleClick('disney')"><h1>Disney Plus Premium</h1>
 								<img alt="" src="forcestacks/disney.png">
 							</figure>
 							
-							<figure><h1>Spotify Premium</h1>
+							<figure onclick="handleClick('spotify')"><h1>Spotify Premium</h1>
 								<img alt="" src="forcestacks/spotify2.png">
 							</figure>   
 
-							<figure><h1>Crunchyroll Premium</h1>
+							<figure onclick="handleClick('crunchyroll')"><h1>Crunchyroll Premium</h1>
 								<img alt="" src="forcestacks/crunch.png">
 							</figure>     
 									
-							<figure><h1>Prime video Premium</h1>
+							<figure onclick="handleClick('primevideo')"><h1>Prime video Premium</h1>
 								<img alt="" src="forcestacks/primevideo.png">
 							</figure>  
 															
 						</div>																																				
 					</div>  
-					
-		      	
-
+							      	
 			      	<!--2do PASO-cantidad de pantallas y precio-->
 				    <div id="step2" class="step2 container-gallery " data-heading="cantidad de cuentas o pantallas" id="part-price" style="display: none; transition: none 0s ease 0s; left: 9px; top: 251.5px;  ">
 				    	<input type="hidden" id="currency" value="usd">
