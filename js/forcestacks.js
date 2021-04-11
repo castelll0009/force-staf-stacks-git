@@ -9,8 +9,34 @@ var buttonPreviusAndroid = document.getElementById("button-previus"); // boton a
 var stepcurrent = 1;
 var anchoVentana = window.innerWidth;
 
+//avanzando  por los pasos con el boton next -- USANDO LISTENERS
+
+document.getElementById("button-next1").addEventListener("click", function() {
+    gotoNextStep(stepcurrent)
+});
+document.getElementById("button-next2").addEventListener("click", function() {
+    gotoNextStep(stepcurrent)
+});
+document.getElementById("button-next3").addEventListener("click", function() {
+    gotoNextStep(stepcurrent)
+});
+document.getElementById("button-next4").addEventListener("click", function() {
+    gotoNextStep(stepcurrent)
+});
+document.getElementById("button-next5").addEventListener("click", function() {
+    gotoNextStep(stepcurrent)
+});
+/*
+var buttonNext1 = document.getElementById("button-next1");
+var buttonNext2 = document.getElementById("button-next2");
+var buttonNext3 = document.getElementById("button-next3");
+var buttonNext4= document.getElementById("button-next4");
+var buttonNext5 = document.getElementById("button-next5");
+*/
+
+
 function setButtons(){
-    if(anchoVentana > 700){        
+    if(anchoVentana > 1108){        
         resolutionPC(1);             
     }else{
         resolutionMovil(2);
@@ -38,7 +64,6 @@ function  showButtons(params) {
         }
     }
 }
-
 function gotoNextStep(Pstepcurrent){
     switch(Pstepcurrent){
         case 1:      
@@ -71,7 +96,6 @@ function gotoNextStep(Pstepcurrent){
     setButtons();
     
 }
-
 function gotoStepPrevius(Pstepcurrent){
     switch(Pstepcurrent){
         case 1:          
@@ -101,7 +125,6 @@ function gotoStepPrevius(Pstepcurrent){
     }
     setButtons();
 }
-
 /*ir hacia atras cuando presiono boton previus anddroid o pc*/
 buttonPreviusAndroid.onclick = function(){
     gotoStepPrevius(stepcurrent);    
@@ -109,7 +132,7 @@ buttonPreviusAndroid.onclick = function(){
 buttonPreviusPC.onclick = function(){
     gotoStepPrevius(stepcurrent);    
 }
-
+//step 1 :Seleccion de algun servicio paso 1
 function handleClick(element){
     /* significa que ya sali delpaso 1*/        
         if(element == 'youtube'){                
@@ -135,32 +158,14 @@ function handleClick(element){
         }    
         
     }
-
-
+setButtons();
 //IMPLEMENTACION O LLAMADO DE LAS FUNCIONES //////////////////////////////////////////////////////////////
 /*pra ocultar el boton de ir hacia trans antes del step 1*/
-setButtons();
+
 
 /* diferentes comportamientos dependiento de la resolucion de lapantalla*/
 window.onresize = function(){
     anchoVentana = window.innerWidth;    
     setButtons();
 };    
-   /*
-const heightOutput = document.querySelector('#height');
-const widthOutput = document.querySelector('#width');    
-        function reportWindowSize() {                
-            heightOutput.textContent = window.innerHeight;
-            widthOutput.textContent = window.innerWidth;  
-            if(widthOutput.textContent <= 700){
-                buttonPreviusPC.style = "display: none";  
-                buttonPreviusAndroid.style = "display: block"; 
-            }else{
-                buttonPreviusPC.style = "display: block";  
-                buttonPreviusAndroid.style = "display: none"; 
-            }
-        }  
-       
-window.onresize = reportWindowSize;
-window.addEventListener('resize', reportWindowSize);
-*/
+

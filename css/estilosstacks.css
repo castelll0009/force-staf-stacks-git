@@ -66,14 +66,15 @@ main{
     padding-bottom: 0px;    
     margin-top: 50px;     
 }
-.container-gallery{      
+.container-gallery{        
     max-width: 1100px;
+    min-width: 100px;
     position: relative;
     font-size: 1em;    
-    width: 100%;     
+    width: 100%;         
     background-color: rgba(255, 255, 255, .9);
-    padding: 20px;
-    margin: auto; 
+    padding: 20px;    
+    margin: auto;     
     text-align: center;   
     border-radius: 14px;
     box-shadow: 0px 0px 40px -5px;            
@@ -82,12 +83,12 @@ main{
 .gallery{               
     display: flex;
     justify-content: center;
-    flex-wrap: wrap ;        
+    flex-wrap: wrap ;           
 }
 
 .container-steps div ,h1{         
     margin: auto;            
-    font-size: 1.2em;
+    font-size: 1.2em;   
 }
 
 figure{       
@@ -139,24 +140,48 @@ figure h1{
     box-shadow: 0px 0px 40px -5px;              
 }
 
-.button-next{                
-    width: 400px;
-    width: auto;
+.button-next{        
     background-color:  #0093C6;    
     /*
-    background-color: rgba(56, 136, 255, 0.9);*/
-    box-shadow: inset 0 -0.5em rgb(0 0 0 / 35%);
-    text-shadow: 0 -0.05em 0 rgb(0 0 0 / 10%);        
+    background-color: rgba(56, 136, 255, 0.9);*/ 
+    text-transform: capitalize;
+    border-radius: 4px;
+    position: static;
+    min-width: 14em;
+    font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    margin: 0 auto;
+    border: 0;    
+    text-align: center;
+    padding: 1em 2em;
+    -webkit-box-shadow: inset 0 -0.5em rgb(0 0 0 / 35%);
+    -moz-box-shadow: inset 0 -0.5em rgba(0, 0, 0, 0.35);
+    -khtml-box-shadow: inset 0 -0.5em rgba(0, 0, 0, 0.35);
+    -ms-box-shadow: inset 0 -0.5em rgba(0, 0, 0, 0.35);
+    box-shadow: inset 0 -0.6em rgb(0 0 0 / 35%);    
     cursor: pointer;
-    padding: 20px;
-    padding-bottom: 30px ;
-    margin: auto; 
-    text-align: center;   
-    border-radius: 2px;         
-    color: white;
+    padding-top: 1.25em;    
+    height: 80px;    
+    line-height: 10px;    
+    text-align: center;
+    padding-bottom: 1.5em;    
+    text-shadow: 0 -0.05em 0 rgb(0 0 0 / 10%);
+    margin-bottom: 0.25em;
+    outline: none;
+    font-weight: 500;
+    max-width: 400px;           
+    
+}
+.button-next:active:not(.nohover){      
+    margin-top: 10px;
+    padding-top: 30px;   
+    height: 70px;        
+    box-shadow: inset 0 -0.2em rgb(0 0 0 / 35%);    
 }
 .button-next:hover{
-    box-shadow: inset 0 -0.5em rgb(0 0 0 / 45%);
+    box-shadow: inset 0 -0.6em rgb(0 0 0 / 45%);
 }
 
 .alert-box {     
@@ -172,6 +197,28 @@ figure h1{
     display: none;
     font-weight: 500;
 }
+select {      
+    border: none;
+    box-shadow: none;    
+    background: transparent;
+    background-image: none;
+    background-color:#ededed;    
+    background-size: 5%;    
+    font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 0.05em solid #e5e5e5;    
+    font-size: 1em;        
+    padding: 0.7em;
+    outline: none;        
+    text-align: center;
+    color: #3c4044;    
+    margin-bottom: 0;    
+    outline: none;
+    border-radius: 0;    
+}
+#step4 p{
+    font-size: 0.8em;      
+}
+
 .div-button-previus-pc{            
    
 }
@@ -305,8 +352,13 @@ figure h1{
     cursor: default;
 
 }
-
   
+}
+/* resolucion telefonos gama baja*/
+@media (max-width: 599px){
+input[type="text"], input[type="date"], select, .button-next, #part-payment .button {
+    min-width: 0;
+    width: 100%;
 }
 
 

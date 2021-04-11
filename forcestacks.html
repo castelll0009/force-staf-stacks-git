@@ -34,16 +34,13 @@
 						<li class="col-md-2 inline-block"><a href="index.html" class=" fuente-tam-pequeno">INICIAR SESION</a></li>
 					</ul>
 				</nav>		
-				<p>Resize the browser window to fire the <code>resize</code> event.</p>
-<p>Window height: <span id="height"></span></p>
-<p>Window width: <span id="width"></span></p>
 					
 					<div class="div-button-previus-pc"><i id="button-previus-pc" class="fa fa-chevron-circle-left  button-previus-pc" ></i></div>		
 												
 				<!--Contenedor de todos los pasos para hacer el stack-->
 			    <div class="container-steps" >	       								     	      
 					<!--1er PASO Elegir el servicio-->
-					<div id="step1" style="display: block;" class="container-gallery" >							        	
+					<div id="step1" style="display: block; padding-bottom: 50px;" class="container-gallery" >							        	
 						<h1>1. Escoje el servicio que deseas adquirir</h1>   	
 						<div class="gallery">
 							<figure id="card1" onclick="handleClick('youtube')"><h1>Youtube Premium</h1>
@@ -70,8 +67,14 @@
 							<figure onclick="handleClick('primevideo')"><h1>Prime video Premium</h1>
 								<img alt="" src="forcestacks/primevideo.png">
 							</figure>  
-															
-						</div>																																				
+														
+						</div>	
+						
+						<div id="button-next1"  class="button-next action-next">							
+							<i class="fa fa-users"></i> Completa el stack <i class="fa fa-share-alt" ></i>																																												
+						</div>				
+
+																																				
 					</div>  
 							      	
 			      	<!--2do PASO-cantidad de pantallas y precio-->
@@ -80,34 +83,37 @@
 						<h1>2. Cantidad de cuentas ó pantallas:</h1>
 						<select id="price">
 							<option value="25">1 pantalla Netflix $ 10000</option><option value="50">2 pantallas Netflix $ 20000</option><option value="100" selected="">3 pantallas Netflix $ 30000</option><option value="250">4 pantallas Netflix $ 40000</option>
-						</select><div  class="button action-next"><i class="fa fa-dollar"></i>Establecer precio</div>
+						</select>
+						<div id="button-next2" class="button-next action-next"><i class="fa fa-dollar"></i>$ Establecer precio</div>
 					</div>		
 
 						<!--3er PASO -->
-			    	<div class="part container-gallery" data-heading="hasta cuando" id="part-deadline" style="display: none; transition: none 0s ease 0s; left: 9px; top: 220px;">
+			    	<div id="step3"  class="part container-gallery" data-heading="hasta cuando" id="part-deadline" style="display: none; transition: none 0s ease 0s; left: 9px; top: 220px;">
 			    		<h1>3. Fecha Limite</h1>
 			    		<input type="date" id="deadline" value="">
-			    		<div  class="button action-next">
+			    		<div id="button-next3"  class="button-next action-next">
 			    			<i class="fa fa-calendar-o"></i>Establecer fecha limite
 			    		</div>
 			    		<div class="alert-box success daysFromNow" style="display: none;">That's 14 days from now</div>
 			    	</div>
 
 			    	<!--4er PASO -->
-		    		<div class="part container-gallery" data-heading="Who are you" id="part-creator" style="display: none; transition: none 0s ease 0s; left: 9px; top: 247.5px;"> 
-		    		<h1>4. Ingresa tu correo eletrónico</h1>
-		    		<p>Aqui recibira las credenciales 
-					del servicio(correos,contraseñas, enlaces y instrucciones para la activacion del servicio.</p>
-		    		<input type="text" id="creatorEmail" placeholder="Your Email" value=""><div  class="button action-next"><i class="fa fa-paper-plane"></i>Set your email</div><div class="alert-box">You need to enter your email</div></div>
+		    		<div id="step4" class="part container-gallery" data-heading="Who are you" id="part-creator" style="display: none; transition: none 0s ease 0s; left: 9px; top: 247.5px;"> 
+						<h1>4. Ingresa tu correo eletrónico</h1>
+						<p >Aqui recibira las credenciales 
+						del servicio(correos,contraseñas, enlaces y instrucciones para la activacion del servicio.</p>
+						<input type="text" id="creatorEmail" placeholder="Your Email" value="">
+						<div id="button-next4" class="button-next action-next"><i class="fa fa-paper-plane"></i>Set your email</div>
+						<div class="alert-box">You need to enter your email</div>
+					</div>
 
 		    		<!--5to PASO -->
-					<div class="part container-gallery" data-heading="Como quieres pagar" id="part-paymetod" style="display: none; transition: none 0s ease 0s; left: 9px; top: 247.5px;"> 
+					<div id="step5"  class="part container-gallery" data-heading="Como quieres pagar" id="part-paymetod" style="display: none; transition: none 0s ease 0s; left: 9px; top: 247.5px;"> 
 		    		<h1>5. Metodo de pago</h1>
 		    		<p>Elije como quieres pagar el servicio.</p>
-		    		<div  class="button action-next"><i class="fa fa-cart-arrow-down"></i>Elegir metodo de pago</div><div class="alert-box">necesitas elegir algun metodo de pago</div></div>
-								
-					<div type="button-next-type" class="button-next action-next "><i class="fa fa-bolt"></i>Selecciona</div>
-					<div class="alert-box ">Debes elegir algun servicio</div>
+		    		<div id="button-next5" class="button-next action-next"><i class="fa fa-cart-arrow-down"></i>Elegir metodo de pago</div><div class="alert-box">necesitas elegir algun metodo de pago</div></div>
+													
+					<div class="alert-box ">Debes elegir algun metodo de pago</div>
 					
 					<div class="div-button-previus"><i id="button-previus" class="fa fa-chevron-circle-left  btn-previus" ></i></div>										
 						
